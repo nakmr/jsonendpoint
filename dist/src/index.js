@@ -9,7 +9,7 @@ var apiSample = {
     "description": "This is sample 3",
     "image": "https://i.imgur.com/FrkBVaD.png"
 };
-app.get('/', function (req, res) {
+app.get('/1', function (req, res) {
     try {
         res.send(apiSample);
     }
