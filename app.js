@@ -21,7 +21,8 @@ var apiSample =
 
 // 取得するAPI
 // http://localhost:3000/api
-app.get("/1", function(req, res, next){
-    res.json(apiSample);
+app.get("/", function(req, res, next){
+    // res.json(apiSample);
+    res.send(apiSample);
 });
 
