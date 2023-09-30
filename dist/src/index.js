@@ -4,9 +4,14 @@ var express = require('express');
 var app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+var apiSample = {
+    "name": "Event Ticket NFT 3",
+    "description": "This is sample 3",
+    "image": "https://i.imgur.com/FrkBVaD.png"
+};
 app.get('/', function (req, res) {
     try {
-        res.send({ name: "hoge" });
+        res.send(apiSample);
     }
     catch (error) {
         res.sendStatus(500);
