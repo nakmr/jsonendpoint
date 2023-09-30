@@ -11,12 +11,7 @@
 
 // // サンプルデータ jsonデータを書く
 // // ここを変更するだけで大丈夫だよ！！
-// var apiSample = 
-// {
-//     "name": "Event Ticket NFT 3",
-//     "description": "This is sample 3",
-//     "image":"https://i.imgur.com/FrkBVaD.png"
-// }
+
 
 
 // // 取得するAPI
@@ -32,9 +27,17 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+
+var apiSample = 
+{
+    "name": "Event Ticket NFT 3",
+    "description": "This is sample 3",
+    "image":"https://i.imgur.com/FrkBVaD.png"
+}
+
 app.get('/', (req: any, res: any) => {
   try {
-    res.send({ name: "hoge" });
+    res.send(apiSample);
   } catch (error) {
     res.sendStatus(500);
   }
