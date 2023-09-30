@@ -17,6 +17,43 @@ app.get('/1', function (req, res) {
         res.sendStatus(500);
     }
 });
+
+app.get('/2', function (req, res) {
+    try {
+        res.send(apiSample);
+    }
+    catch (error) {
+        res.sendStatus(500);
+    }
+});
+
+app.get('/3', function (req, res) {
+    try {
+        res.send(apiSample);
+    }
+    catch (error) {
+        res.sendStatus(500);
+    }
+});
+
+app.get('/4', function (req, res) {
+    try {
+        res.send(apiSample);
+    }
+    catch (error) {
+        res.sendStatus(500);
+    }
+});
+
+app.get('/5', function (req, res) {
+    try {
+        res.send(apiSample);
+    }
+    catch (error) {
+        res.sendStatus(500);
+    }
+});
+
 app.listen({ port: 3000 }, function () {
     console.log("Server ready at http://localhost:3000");
 });
